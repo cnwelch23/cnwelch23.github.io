@@ -22,12 +22,14 @@ main {
     padding:0 15px;
 }
 main h2 {
-    birder-bottom: 1 px solid black;
+    border-bottom: 1 px solid black;
 
 }
-.profile {
+img.profile {
     float:right;
     box-shadow: 0 0 17px black;
+    width: 400px;
+    height: auto;
 
 }
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active footer a:focus {
@@ -36,10 +38,10 @@ footer a, footer a:link, footer a:visited, footer a:hover, footer a:active foote
 footer a:hoover {
     color: #DDD;
 }
-footer (
+footer {
     clear:both;
     text-align:center;
-)
+}
 footer p.legal {
     margin-bottom:9px;
     font-size:.9em;
