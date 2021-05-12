@@ -1,0 +1,20 @@
+.red {
+    background: red;
+    width: 200px;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.header-typography {
+    font-family: 'Lato', sans-serif;
+}
+
+.body-typography {
+    font-family: 'Playfair Display', serif;
+}
