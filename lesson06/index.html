@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+<head>
+    <title>Weather Play Dates</title>
+    <meta charst="utf-8">
+    <meta name="description" content= "">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital@1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 769px) and (max-width: 1279px)">
+    <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 1280px)">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
+    
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+</head>
+<body onload="calcWindchill(15,10)">
+    <header>
+        <p id="banner-friday"></p>
+            <picture>
+                <img src="images/sun.png" alt="Weather Play Dates" width="200" /> 
+            </picture>
+            <section class="headings">
+                <h1>Weather Play Dates</h1>
+                <div class="m">Rain Rain go away</div>
+            </section>
+          
+            
+       
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="" class="active">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero-content">
+            <picture>
+                <source media="(min-width:650px)" srcset="images/herosky.jpeg">
+                <source media="(min-width:464px)" srcset="images/herosky.jpeg">   
+                <img src="images/herosky.jpeg" alt="Hero Shot">
+            </picture>
+            <div class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="temp">55</span>°F</p>
+                <p>High: 79°F</p>
+                <p>Low: 49°F</p>
+                <p>Humidity: 37%</p>
+                <p>Wind Speed: <span id="wind-speed">12</span>mph</p>
+                <p>Wind Chill: <span id="wind-chill">60</span>°F</p>
+            </div>
+        </div>
+        <div>weather summary</div>
+        <div>Article Title/ five day forecast</div>
+
+
+    </main>
+    <footer>
+        <div class="contact">
+            <h2>Contact information</h2>
+            <p>123 123 1234</p>
+        </div>
+    </footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>

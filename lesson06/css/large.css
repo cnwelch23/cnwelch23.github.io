@@ -1,0 +1,17 @@
+img {
+    width:100%;
+}
+.weather-summary {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: blue;
+    margin: auto;
+    padding: 12px;
+    }
+
+    .hero-content {
+        position: relative;
+        margin-left: .5em;
+        margin-right: .5em;
+    }

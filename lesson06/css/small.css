@@ -1,0 +1,11 @@
+a:hover{
+    color: yellow;
+}
+
+.active {
+    color:green;
+}
+
+img {
+    width:100%;
+}
