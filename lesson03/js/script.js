@@ -1,16 +1,3 @@
-var d = new Date();
-var n = d.getDay();
-console.log("the day of the week is: " + n);
-
-function myFunction() {
-    if (n == 5) {
-        document.getElementById("banner-friday").innerHTML =
-        "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
-    }
-}
-//for date how to format var d and same with banner 
-
-
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
 
@@ -26,16 +13,3 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 
   classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
   */
-
-function sizeChange() {
-    var width = window.innerWidth || document.body.clientWidth;
-    if (width < 768) {
-        document.getElementById("view-size-id").innerHTML = "Small";
-    }
-    if (width >= 768){
-        document.getElementById("view-size-id").innerHTML = "Medium";
-    }
-    if (width > 1024){
-            document.getElementById("view-size-id").innerHTML = "Large";
-    }
-}

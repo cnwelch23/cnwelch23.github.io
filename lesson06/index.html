@@ -13,8 +13,10 @@
     <script src="scripts/windchill.js"></script>
     
     <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital@1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
-<body onload="calcWindchill(15,10)">
+<body onload="calcWindchill(15,10)" onresize="sizeChange()">
     <header>
         <p id="banner-friday"></p>
             <picture>
@@ -29,13 +31,14 @@
        
     </header>
     <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="" class="active">Preston</a></li>
-            <li><a href="">Soda Springs</a></li>
-            <li><a href="">Fish Haven</a></li>
-            <li><a href="">Storm Center</a></li>
-            <li><a href="">Gallery</a></li>
+        <ul class="navigation">
+            <li><a class="ham" href="#">Menu</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
     <main>
@@ -54,6 +57,7 @@
                 <p>Wind Speed: <span id="wind-speed">12</span>mph</p>
                 <p>Wind Chill: <span id="wind-chill">60</span>°F</p>
             </div>
+            <div class="view-size" id="view-size-id" onresize="sizeChange()"></div>
         </div>
         <div>weather summary</div>
         <div>Article Title/ five day forecast</div>

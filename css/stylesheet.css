@@ -7,8 +7,8 @@ body {
         margin:0 auto;
 
 }
-head, footer{
-    background-color: #641947;
+header, footer{
+    background-color: #0d3b66;
     color: white;
     padding: 8px;
     border-radius: 15px;
@@ -19,16 +19,16 @@ header h1 {
         padding-left:95px;
 }
 main {
-    padding:0 15px;
+    padding:30px 15px;
 }
 main h2 {
-    border-bottom: 1 px solid black;
+    border-bottom: 1px solid black;
 
 }
 img.profile {
     float:right;
     box-shadow: 0 0 17px black;
-    width: 200px;
+    width: 150px;
     height: auto;
 
 }

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 769px) and (max-width: 1279px)">
     <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 1280px)">
-    <script src="js/page.js"></script>
+    <script src="scripts/script.js"></script>
     <meta name="viewport" content="width=device=width, initial-scale=1.0">
 </head>
-<body>
+<body onload="myFunction()">
     <header>
         <p id="banner-friday"></p>
             <picture>
@@ -22,18 +22,16 @@
                 <h1>Weather Play Dates</h1>
                 <div class="m">Rain Rain go away</div>
             </section>
-          
-            
-       
     </header>
     <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="" class="active">Preston</a></li>
-            <li><a href="">Soda Springs</a></li>
-            <li><a href="">Fish Haven</a></li>
-            <li><a href="">Storm Center</a></li>
-            <li><a href="">Gallery</a></li>
+        <ul class="navigation">
+            <li><a class="ham" href="#">Menu</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
     <main>
