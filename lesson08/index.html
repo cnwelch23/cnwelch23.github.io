@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+<head>
+    <title></title>
+    <meta charst="utf-8">
+    <meta name="description" content= "">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital@1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
+    
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital@1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">Menu</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+<h1>Storm Center<h1>
+    <h2>Report Storms Here</h2>
+
+<form action="thanks.html" method="post"> 
+    <label for="fullname">
+    Full Name: <input type="text" required name="Full name" id="fullname" value="" size="25" maxlength="50" /> 
+    </label>
+    <br>
+    <label for="email">
+    Email: <input type="email" name="email" id="email" value="" size="25" maxlength="50" /> 
+    </label>
+    <br>  
+    <label for="Phone">
+    Phone: <input type="tel" name="Phone" id="Phone" value="" size="25" maxlength="50" /> 
+    </label>
+    <br>
+    <label for="Zip">
+    Zip: <input type="number" name="Zip" id="Zip" value="" size="25" maxlength="50" /> 
+    </label>
+    <h1>Storm Information</h1>
+    <label for="StormDate">
+    Storm Date: <input type="date" name="Storm Date" id="StormDate" value="" size="25" maxlength="50" /> 
+    </label>
+    <br>
+    <label for="stormtype">
+    Storm Type:
+    <input list="stormtype" id="stormtype">
+          <datalist name="storms" id="storms">
+            <option value="" disabled></option>
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorms"></option>
+            <option value="Tornado"></option>
+          </datalist>
+          </label>
+              <br>
+    <label for="stormseverity">
+    Storm Severity (1-10) 
+            <input type="range" min="1" max="100" value="50" class="slider" id="stormseverity">
+    </label>
+          <br>
+          <label for="regions">Choose a storm region:
+          <select name="regions" id="regions">
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Fish Haven">Fish Haven</option>
+          </label>
+          </select>
+          <br>
+          User in Danger-Level:
+          <br>
+          <label for="yes">
+          <input type="radio" id="yes" name="danger" value="yes">
+          Yes</label><br>
+          <label for="No">
+          <input type="radio" id="no" name="danger" value="no">
+          No</label><br>
+          <label for="Maybe">
+            <input type="radio" id="Maybe" name="danger" value="Maybe">
+          Maybe</label> 
+       <br>
+        Please Share Additional Information:
+        <label for="info">
+            <br>
+        <textarea id="info" name="info" rows="4" cols="50">
+          </textarea>
+        </label>
+        <br>
+        <input type="submit" name="Info" value="Submit" /> 
+
+            </form>
+            </body>
+            </html>
+
