@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+<head>
+    <title>Soda Springs Weather</title>
+    <meta charst="utf-8">
+    <meta name="description" content= "">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital@1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital@1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body onresize="sizeChange()">
+    <header>
+        <p id="banner-friday"></p>
+        <picture>
+            <img src="images/sun.png" alt="Weather Play Dates" width="200" /> 
+        </picture>
+        <section class="headings">
+            <h1>Weather Play Dates</h1>
+            <div class="m">Rain Rain go away</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+          <li><a class="ham" href="#">Menu</a></li>
+          <li><a href="/../lesson09"></a>Home</a></li>
+          <li><a href="/../lesson10/preston-10.html">Preston</a></li>
+          <li><a href="sodasprings-11.html"class="active">Soda Springs</a></li>
+          <li><a href="fishhaven-11.html">Fish Haven</a></li>
+          <li><a href="/../lesson08">Storm Center</a></li>
+          <li><a href="/../lesson07/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+       
+        <div class="hero-content">
+            <picture>
+                <source media="(min-width:650px)" srcset="images/sodasprings.jpg">
+                <source media="(min-width:464px)" srcset="images/sodasprings.jpg">   
+                <img src="images/sodasprings.jpg" alt="Soda Springs Shot">
+            </picture>
+            <div class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Condition: <span id="condition"></span></p>
+                <p>High: <span id="high">--°F</span></p>
+                <p>Current Temperature: <span id="temperature">--°F</span></p>
+                <p>Humidity: <span id="humidity">--%</span></p>
+                <p>Wind Speed: <span id="windSpeed">--mph</span></p>
+                <p>Wind Chill: <span id="windChill">--°F</span></p>
+            </div>
+            <div class="view-size" id="view-size-id" onresize="sizeChange()"></div>
+        </div>
+        <section class="forecast">
+            <div class="section-container">
+              <div class="forecast-card">
+                <p class="forecast-day">Day 1</p>
+                <div class="forecast-container">
+                  <img
+                    class="forecast-img"
+                    src="https://openweathermap.org/img/w/13d.png"
+                    alt=""
+                  />
+                  <p class="forecast-temperature">--°F</p>
+                </div>
+              </div>
+    
+              <div class="forecast-card">
+                <p class="forecast-day">Day 2</p>
+                <div class="forecast-container">
+                  <img
+                    class="forecast-img"
+                    src="https://openweathermap.org/img/w/13d.png"
+                    alt=""
+                  />
+    
+                  <p class="forecast-temperature">80°F</p>
+                </div>
+              </div>
+    
+              <div class="forecast-card">
+                <p class="forecast-day">Day 3</p>
+                <div class="forecast-container">
+                  <img
+                    class="forecast-img"
+                    src="https://openweathermap.org/img/w/13d.png"
+                    alt=""
+                  />
+    
+                  <p class="forecast-temperature">80°F</p>
+                </div>
+              </div>
+    
+              <div class="forecast-card">
+                <p class="forecast-day">Day 4</p>
+                <div class="forecast-container">
+                  <img
+                    class="forecast-img"
+                    src="https://openweathermap.org/img/w/13d.png"
+                    alt=""
+                  />
+    
+                  <p class="forecast-temperature">80°F</p>
+                </div>
+              </div>
+    
+              <div class="forecast-card">
+                <p class="forecast-day">Day 5</p>
+                <div class="forecast-container">
+                  <img
+                    class="forecast-img"
+                    src="https://openweathermap.org/img/w/13d.png"
+                    alt=""
+                  />
+    
+                  <p class="forecast-temperature">80°F</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+    </main>
+    <footer>
+        <div class="contact">
+            <h2>Contact information</h2>
+            <p>123 123 1234</p>
+        </div>
+    </footer>
+    <script defer src="sodasprings.js"></script>
+</body>
+</html>

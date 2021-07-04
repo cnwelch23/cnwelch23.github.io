@@ -52,3 +52,8 @@ nav {
   br{
       margin: 5px;
   }
+
+
+  .active {
+    background-color:#EB5C47;
+  }
